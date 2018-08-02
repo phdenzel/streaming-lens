@@ -1,0 +1,23 @@
+# Build settings - configuration file for jekyll (https://jekyllrb.com/)
+#
+# Use jekyll build (--watch) in shell to build the current directory to ./_site
+# Use jekyll serve (--watch) to build the site and start a local server
+# Attention: This file is *NOT* reloaded automatically when you use --watch.
+#            Changes to this file need a restart of the server process.
+markdown: redcarpet
+permalink: pretty
+#port: 8000
+sass:
+  sass_dir: assets/css
+  style: nested
+
+# Site settings
+# - use the variables to dynamically write your code for the website
+title: streamlens.js
+email: phdenzel@physik.uzh.ch
+description: > # this means ignore newlines until "baseurl:"
+  Description of the most awesomest site of awsome sites...
+#baseurl: "" # subpath of the site, e.g. /blog
+#url: "" # the base hostname & protocol for the site 
+#github_username: phdenzel
+#twitter_username: @phdenzel
