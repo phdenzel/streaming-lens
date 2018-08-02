@@ -1,8 +1,5 @@
-# lensing.js
+# streamlens.js
 
-A javascript app that provides the module to lens images.
+A javascript app that combines both lensing.js and camengine.js
 
-Include [lensing.js](https://rawgit.com/phdenzel/lensing.js/master/lensing.js) with
-``` html
-<script type="text/javascript" src="https://rawgit.com/phdenzel/lensing.js/master/lensing.js"></script>
-```
+
