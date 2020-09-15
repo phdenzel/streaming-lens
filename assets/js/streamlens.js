@@ -12,7 +12,12 @@ function camInitSuccess() {
 
 
 function lensTracker(evt) {
-    var mp = LensModule.trackMouse(evt);
+    console.log(evt.type)
+    if (evt.type == 'touchmove') {
+        var mp = LensModule.trackTouch(evt);
+    } else {
+        var mp = LensModule.trackMouse(evt);
+    }
     LensModule.setCenter(mp.x, mp.y);
 }
 
@@ -21,6 +26,7 @@ function lensloadStream(resolve) {
     console.log(resolve);
     LensModule.readImage(video);
     document.addEventListener('mousemove', lensTracker, false);
+    document.addEventListener('touchmove', lensTracker, false);
 }
 
 
