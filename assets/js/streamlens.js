@@ -12,8 +12,9 @@ function camInitSuccess() {
 
 
 function lensTracker(evt) {
-    console.log(evt.type)
+    // console.log(evt.type)
     if (evt.type == 'touchmove') {
+        evt.preventDefault()
         var mp = LensModule.trackTouch(evt);
     } else {
         var mp = LensModule.trackMouse(evt);
@@ -26,7 +27,7 @@ function lensloadStream(resolve) {
     console.log(resolve);
     LensModule.readImage(video);
     document.addEventListener('mousemove', lensTracker, false);
-    document.addEventListener('touchmove', lensTracker, false);
+    document.addEventListener('touchmove', lensTracker, {passive: false});
 }
 
 
